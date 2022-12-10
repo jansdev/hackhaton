@@ -4,9 +4,6 @@ def parse_excel_data(filename, columns):
     # Load the Excel file into a Pandas DataFrame
     df = pd.read_excel(filename)
 
-    # add column with timestamps
-    columns.append('Kod stacji')
-
     #change second row to be data titles
     headers = df.iloc[0]
     code_as_header_df  = pd.DataFrame(df.values[1:], columns=headers)
