@@ -6,5 +6,6 @@ $ pip install numpy
 $ pip install matplotlib
 $ pip install basemap
 $ pip install basemap-data-hires
+$ pip install PySimpleGUI
 ```
 

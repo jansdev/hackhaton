@@ -3,8 +3,40 @@ import numpy as np
 
 #all data models we perform analysis on
 
+class TricityPoluttionStationCoordinates:
+
+    #Gdynia, ul. Porębskiego
+    class PmGdyPorebsk:
+        lat = 54.560836
+        lon = 18.493331
+
+    #Gdynia, ul. Szafranowa
+    class PmGdySzafran:
+        lat = 54.465758 
+        lon = 18.464911
+
+    #Sopot, ul. Bitwy Pod Płowcami
+    class PmSopBiPlow:
+        lat = 54.43451
+        lon = 18.57884
+
+    #Gdańsk, ul. Wyzwolenia
+    class PmGdaWyzwole:
+        lat = 54.400833 
+        lon = 18.657497
+
+    #Gdańsk, ul. Leczkowa
+    class PmGdaLeczkow:
+        lat = 54.380279
+        lon = 18.620274
+
+    #Gdańsk, ul. Powstańców Warszawskich
+    class PmGdaPowWars:
+        lat = 54.353336
+        lon = 18.635283
+
 #model that contains PM10 polution data as numpy arrays
-class TricityPM10PoluttionModel:
+class TricityPM10PolutionModel:
 
     #data source parameters 
     file_name = 'data/2021_PM10_1g.xlsx'
@@ -36,7 +68,7 @@ class TricityPM10PoluttionModel:
     pm_gda_pow_wars = np.delete(pm_gda_pow_wars, [0, 1, 2 , 3]) 
 
 #model that contains NO2 polution data as numpy arrays
-class TricityNO2PoluttionModel:
+class TricityNO2PolutionModel:
 
     #data source parameters 
     file_name = 'data/2021_NO2_1g.xlsx'
@@ -68,7 +100,7 @@ class TricityNO2PoluttionModel:
     pm_gda_pow_wars = np.delete(pm_gda_pow_wars, [0, 1, 2, 3]) 
 
 #model that contains CO polution data as numpy arrays
-class TricityCOPoluttionModel:
+class TricityCOPolutionModel:
 
     #data source parameters 
     file_name = 'data/2021_CO_1g.xlsx'
