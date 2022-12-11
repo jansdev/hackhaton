@@ -1,7 +1,10 @@
 # Aplikacja AirQ
 
-# Wymagane biblioteki
-pip install numpy
-pip install matplotlib
-pip install basemap
-pip install basemap-data-hires
+## Setup
+```
+$ pip install numpy
+$pip install matplotlib
+$pip install basemap
+$pip install basemap-data-hires
+```
+
